@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portofolio Aldi Aldion Candra</title>
+  <meta name="description"
+    content="Portofolio Aldi Aldino Candra, mahasiswa Informatika semester 1 di Universitas Pamulang yang berfokus pada web development.">
+  <meta name="theme-color" content="#2447F5">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+ 
+  <script>
+    (function () {
+      var tema;
+      try { tema = localStorage.getItem('tema'); } catch (e) { }
+      if (!tema) {
+        tema = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', tema);
+      document.documentElement.classList.add('js'); 
+    })();
+  </script>
+
+
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+  <a class="skip-link" href="#main">Lewati ke konten utama</a>
+
+  <!-- ===================== 1. HEADER & NAVIGASI ===================== -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navigasi utama">
+      <!-- GANTI: nama logo -->
+      <a href="#home" class="logo">Aldi<span>.dev</span></a>
+
+     
+      <ul class="nav-menu" id="menu">
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#skills">Skill</a></li>
+        <li><a href="#projects">Proyek</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Ganti tema terang atau gelap"
+          aria-pressed="false">
+          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2" />
+            <path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor" />
+          </svg>
+        </button>
+
+        <button class="icon-btn nav-toggle" id="nav-toggle" type="button" aria-label="Buka menu" aria-expanded="false"
+          aria-controls="menu">
+          <span class="bar-line"></span>
+          <span class="bar-line"></span>
+          <span class="bar-line"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ===================== 2. HERO ===================== -->
+    <section class="hero" id="home">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="blob b1"></span>
+        <span class="blob b2"></span>
+        <span class="blob b3"></span>
+      </div>
+
+      <div class="container hero-grid">
+
+        <div class="hero-text">
+          <p class="hero-status"><span class="dot" aria-hidden="true"></span>Mahasiswa semester 1, Informatika,
+            Universitas Pamulang</p>
+
+          <h1>Aldi Aldino Candra</h1>
+          <p class="hero-role">Mahasiswa Informatika &amp; <span class="rotator" id="rotator">Web Enthusiast</span></p>
+          <p class="hero-desc">
+            Saya membangun fondasi web development dengan fokus pada tampilan yang bersih,
+            responsif, dan mudah digunakan. Saya terbuka untuk kolaborasi proyek kuliah maupun proyek pribadi.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#projects">Lihat proyek saya</a>
+            <a class="btn btn-ghost" href="#contact">Hubungi saya</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <span class="chip c1" aria-hidden="true">HTML</span>
+          <span class="chip c2" aria-hidden="true">CSS</span>
+          <span class="chip c3" aria-hidden="true">JavaScript</span>
+          <span class="chip c4" aria-hidden="true">Git</span>
+
+
+          <figure class="photo-frame">
+            <div class="photo-fallback" aria-hidden="true"><span>NK</span><small>Tambahkan foto.jpg</small></div>
+            <img src="aldi.jpg" alt="aldi" width="480" height="600" onerror="this.remove()">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PITA TEKNOLOGI BERJALAN (marquee) ===================== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>Git</li>
+          <li>GitHub</li>
+          <li>Python</li>
+          <li>SQL</li>
+          <li>Figma</li>
+          <li>VS Code</li>
+          <li>Linux</li>
+          <li>Algoritma</li>
+          <li>Responsive Design</li>
+          <li>UI Design</li>
+          <li>Open Source</li>
+        </ul>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>Git</li>
+          <li>GitHub</li>
+          <li>Python</li>
+          <li>SQL</li>
+          <li>Figma</li>
+          <li>VS Code</li>
+          <li>Linux</li>
+          <li>Algoritma</li>
+          <li>Responsive Design</li>
+          <li>UI Design</li>
+          <li>Open Source</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ===================== 3. ABOUT ME ===================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head">
+          <h2>Tentang saya</h2>
+          <p>Sedikit cerita tentang latar belakang dan hal yang saya pelajari.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text">
+
+            <p>
+              Saya mahasiswa Informatika semester 1 di Universitas Pamulang. Saya memilih jurusan ini
+              karena tertarik pada cara website dan aplikasi dibangun, dari logika di baliknya
+              sampai tampilan yang dilihat pengguna.
+            </p>
+            <p>
+              Saat ini saya memperdalam dasar pemrograman web dan logika algoritma. Setiap materi
+              kuliah saya terapkan menjadi proyek kecil yang bisa langsung dibuka di browser
+              dan saya simpan di GitHub.
+            </p>
+            <p>
+              Di luar kuliah, saya membaca dokumentasi, mengeksplorasi desain antarmuka,
+              dan mengikuti komunitas coding.
+            </p>
+
+            <ul class="tag-list" aria-label="Ketertarikan di bidang IT">
+              <li>Web Development</li>
+              <li>UI Design</li>
+              <li>Open Source</li>
+              <li>Cyber Security</li>
+              <li>Game Development</li>
+            </ul>
+          </div>
+
+          <div class="about-side">
+            <div class="code-window" role="img"
+              aria-label="Cuplikan kode JavaScript berisi profil singkat: jurusan Informatika, semester 1, sedang belajar HTML, CSS, dan JavaScript.">
+              <div class="code-bar" aria-hidden="true">
+                <span class="light"></span><span class="light"></span><span class="light"></span>
+                <span class="code-file">profil.js</span>
+              </div>
+              <pre class="code-body" id="code-output" aria-hidden="true">const saya = {
+  nama: "Aldi Aldino Candra",
+  jurusan: "Informatika",
+  semester: 1,
+  sedangBelajar: ["HTML", "CSS", "JS"],
+  suka: "membuat website",
+  siapKolaborasi: true,
+};</pre>
+            </div>
+
+            <dl class="fact-list">
+              <div>
+                <dt>Kuliah</dt>
+                <dd>Informatika, Semester 1</dd>
+              </div>
+              <div>
+                <dt>Kampus</dt>
+                <dd>Universitas Pamulang</dd>
+              </div>
+              <div>
+                <dt>Fokus belajar</dt>
+                <dd>Front-end web dan dasar algoritma</dd>
+              </div>
+              <div>
+                <dt>Hobi</dt>
+                <dd>Ngoding, desain UI, bermain gim</dd>
+              </div>
+              <div>
+                <dt>Lokasi</dt>
+                <dd>Kota, Indonesia</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+
+        <div class="stats">
+          <div class="stat"><span class="stat-num" data-count="3">3</span><span class="stat-label">Proyek latihan</span>
+          </div>
+          <div class="stat"><span class="stat-num" data-count="9">9</span><span class="stat-label">Teknologi
+              dipelajari</span></div>
+          <div class="stat"><span class="stat-num" data-count="1">1</span><span class="stat-label">Semester
+              berjalan</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 4. SKILLS ===================== -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="section-head">
+          <h2>Skill</h2>
+          <p>Yang sudah saya pakai di tugas kuliah, dan yang sedang saya pelajari.</p>
+        </div>
+
+        <div class="skills-grid">
+
+          <div class="skill-panel">
+            <h3>Sudah saya pakai</h3>
+
+            <div class="skill">
+              <div class="skill-top"><span>HTML5</span><span class="skill-label">Cukup nyaman</span></div>
+              <div class="bar-track" aria-hidden="true">
+                <div class="bar-fill" style="--level: 80%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-top"><span>CSS3 (Flexbox &amp; Grid)</span><span class="skill-label">Cukup nyaman</span>
+              </div>
+              <div class="bar-track" aria-hidden="true">
+                <div class="bar-fill" style="--level: 70%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-top"><span>JavaScript</span><span class="skill-label">Terus berlatih</span></div>
+              <div class="bar-track" aria-hidden="true">
+                <div class="bar-fill" style="--level: 55%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-top"><span>Git &amp; GitHub dasar</span><span class="skill-label">Terus berlatih</span>
+              </div>
+              <div class="bar-track" aria-hidden="true">
+                <div class="bar-fill" style="--level: 45%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-panel">
+            <h3>Sedang dipelajari</h3>
+            <ul class="badge-list">
+              <li>Python</li>
+              <li>SQL &amp; MySQL</li>
+              <li>Algoritma</li>
+              <li>Figma</li>
+              <li>Linux dasar</li>
+            </ul>
+
+            <h3>Alat yang saya pakai</h3>
+            <ul class="badge-list">
+              <li>VS Code</li>
+              <li>GitHub</li>
+              <li>Chrome DevTools</li>
+              <li>Notion</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 5. PORTFOLIO / PROJECTS ===================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head">
+          <h2>Proyek</h2>
+          <p>Tiga proyek latihan yang saya kerjakan selama kuliah.</p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Proyek 1 -->
+          <article class="project-card">
+            <div class="thumb thumb-calc" aria-hidden="true">
+              <div class="ui-calc">
+                <span class="screen"></span>
+                <i></i><i></i><i></i><i class="op"></i>
+                <i></i><i></i><i></i><i class="op"></i>
+                <i></i><i></i><i></i><i class="op"></i>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Kalkulator Web</h3>
+              <p>Kalkulator dengan empat operasi dasar. Dibuat untuk berlatih event listener dan fungsi di JavaScript.
+              </p>
+              <ul class="tags">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Proyek 2 -->
+          <article class="project-card">
+            <div class="thumb thumb-cafe" aria-hidden="true">
+              <div class="ui-cafe">
+                <span class="cup"></span>
+                <span class="line l1"></span>
+                <span class="line l2"></span>
+                <span class="pill"></span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Landing Page Kedai Kopi</h3>
+              <p>Halaman promosi satu halaman yang tampil rapi di HP dan laptop. Latihan Flexbox, Grid, dan media query.
+              </p>
+              <ul class="tags">
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Proyek 3 -->
+          <article class="project-card">
+            <div class="thumb thumb-todo" aria-hidden="true">
+              <div class="ui-todo">
+                <div class="row done"><b></b><span></span></div>
+                <div class="row"><b></b><span></span></div>
+                <div class="row"><b></b><span></span></div>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Aplikasi To-Do List</h3>
+              <p>Daftar tugas yang bisa ditambah, dicentang, dan dihapus. Datanya tersimpan di browser dengan
+                localStorage.</p>
+              <ul class="tags">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 6. CONTACT ===================== -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <h2>Kontak</h2>
+          <p>Terbuka untuk kolaborasi proyek dan diskusi seputar web development. Silakan kirim pesan.</p>
+        </div>
+
+        <div class="contact-grid">
+
+          <ul class="contact-links">
+            <li>
+              <a href="mailto:emailkamu@example.com">
+                <span class="c-name">Email</span>
+                <span class="c-handle">aldialdinocandra@gmail.com</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/usernamekamu" target="_blank" rel="noopener">
+                <span class="c-name">Instagram</span>
+                <span class="c-handle">@aldy.2324</span>
+              </a>
+            </li>
+          </ul>
+
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="field">
+              <label for="f-name">Nama</label>
+              <input type="text" id="f-name" name="nama" autocomplete="name" aria-describedby="f-name-error">
+              <p class="field-error" id="f-name-error"></p>
+            </div>
+            <div class="field">
+              <label for="f-email">Email</label>
+              <input type="email" id="f-email" name="email" autocomplete="email" aria-describedby="f-email-error">
+              <p class="field-error" id="f-email-error"></p>
+            </div>
+            <div class="field">
+              <label for="f-message">Pesan</label>
+              <textarea id="f-message" name="pesan" rows="5" aria-describedby="f-message-error"></textarea>
+              <p class="field-error" id="f-message-error"></p>
+            </div>
+            <button class="btn btn-primary" type="submit">Kirim pesan</button>
+            <!-- aria-live: pembaca layar akan membacakan teks ini saat berubah -->
+            <p class="form-status" id="form-status" aria-live="polite"></p>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== 7. FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Aldi Aldino Candra. Mahasiswa Informatika, Universitas Pamulang.</p>
+      <a href="#home">Kembali ke atas</a>
+    </div>
+  </footer>
+
+  <a href="#home" class="to-top" id="to-top" aria-label="Kembali ke atas">
+    <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+        stroke-linejoin="round" />
+    </svg>
+  </a>
+</body>
+</html>
